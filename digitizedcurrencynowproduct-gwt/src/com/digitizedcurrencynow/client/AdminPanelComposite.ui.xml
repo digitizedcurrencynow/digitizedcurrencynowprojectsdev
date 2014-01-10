@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.admin-panel {
+			width: 1160px;
+			margin-top: 30px;
+			margin-left: 10px;
+			margin-bottom: 70px;
+		}
+    </ui:style>
+    
+    <g:HTMLPanel>
+      	<g:VerticalPanel styleName="{style.admin-panel}">
+		      <g:SplitLayoutPanel ui:field="splitpanel" width="1140px" height="550px">
+					<g:west size="150">
+					    <g:VerticalPanel ui:field="linksPanel" width="150px">
+					    	<g:Tree ui:field="tree" ></g:Tree>
+					    </g:VerticalPanel>
+					</g:west>
+				    <g:center size="990">
+						<g:VerticalPanel ui:field="multiPanel" width="990px"></g:VerticalPanel>
+					</g:center>
+				</g:SplitLayoutPanel>
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+		 
+</ui:UiBinder> 

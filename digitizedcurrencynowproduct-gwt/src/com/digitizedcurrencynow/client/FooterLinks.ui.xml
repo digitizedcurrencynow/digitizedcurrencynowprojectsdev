@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+	<ui:style>
+		.footer-panel {
+			width: 100%;
+			min-width:980px;
+			background-color: grey;
+  			background-image: none;
+			display:block;
+		}
+		.panellinks{
+		 	margin-left: 350px;
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+		.buttonlinks {
+			color: white;
+ 			border: White;
+  			font-size: 18px;
+  			font-family: Calibri;
+  			background-color: grey;
+  			background-image: none;
+  			cursor: pointer;
+		}
+	</ui:style>
+	
+
+	
+	<g:HTMLPanel>
+	    <g:HorizontalPanel styleName="{style.footer-panel}" >
+	        <g:Grid width="500px" styleName="{style.panellinks}">
+	            <g:row>
+		            <g:customCell>
+						<g:Button styleName="{style.buttonlinks}" ui:field="home" />
+					</g:customCell>
+					<g:customCell>
+						<g:Button styleName="{style.buttonlinks}" ui:field="aboutus" />
+					</g:customCell>
+					<g:customCell>
+						<g:Button styleName="{style.buttonlinks}" ui:field="faq" />
+					</g:customCell>
+					<g:customCell>
+						<g:Button styleName="{style.buttonlinks}" ui:field="contactus" />
+					</g:customCell>
+				</g:row>
+			</g:Grid>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+	
+</ui:UiBinder> 

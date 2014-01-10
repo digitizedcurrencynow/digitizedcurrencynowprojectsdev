@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='res' type='com.digitizedcurrencynow.client.resources.Resources'/>
+	<ui:style>
+		.login-panel {
+			color: white;
+			border: white;
+			background-image: none;
+			min-width: 980px;
+			display: block;
+		}
+		
+		.headerimage {
+			cursor: pointer;
+			margin-top: 1px;
+			margin-left: 250px;
+			margin-right: 100px;
+			margin-bottom: 2px;
+		}
+</ui:style>
+	   <g:HTMLPanel>
+       <g:HorizontalPanel styleName="{style.login-panel}" >
+		    <g:Image styleName="{style.headerimage}" resource='{res.dcnheaderlogo}'></g:Image>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

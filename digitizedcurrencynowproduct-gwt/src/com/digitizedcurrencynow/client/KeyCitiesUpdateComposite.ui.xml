@@ -1,0 +1,49 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.inputform {
+			font-family: Calibri;
+     		font-size: 17px;
+     		color: #056E50;
+     		font-weight: bold;
+			margin-bottom:1px;
+			margin-left:150px;
+		}
+		.inputtxt{
+			margin-bottom:10px;
+			margin-left:150px;
+		}
+		.signupbutton {
+			font-weight: bold;
+			font-size: 12px;
+			margin-left:150px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	    
+	    <g:VerticalPanel>
+		    <g:Label styleName="{style.inputform}"   ui:field="cityNameLbl" >City Name</g:Label>
+			<g:TextBox styleName="{style.inputtxt}" ui:field="cityNameTxt"  ></g:TextBox> 
+		
+			<g:Label styleName="{style.inputform}"   ui:field="cityImageUrlLbl">Image Url</g:Label>
+			<g:TextBox styleName="{style.inputtxt}" ui:field="cityImageUrlTxt"></g:TextBox>
+			
+			<g:Label styleName="{style.inputform}"   ui:field="cityLatLbl">City Lat</g:Label>
+			<g:TextBox styleName="{style.inputtxt}" ui:field="cityLatTxt"></g:TextBox>
+			
+			<g:Label styleName="{style.inputform}"   ui:field="cityLongLbl">City Long</g:Label>
+			<g:TextBox styleName="{style.inputtxt}" ui:field="cityLongTxt"></g:TextBox>
+			
+			<g:Label styleName="{style.inputform}"   ui:field="cityDescDetailsLbl">City Description</g:Label>
+			<g:TextBox styleName="{style.inputtxt}" ui:field="cityDescDetailsTxt"></g:TextBox>
+			
+			<g:Label styleName="{style.inputform}"   ui:field="countryNameLbl">Country</g:Label>
+			<g:ListBox styleName="{style.inputtxt}" ui:field="countryNameLst"></g:ListBox>
+			
+			<g:Button styleName="{style.signupbutton}" ui:field="updatebutton">Save</g:Button>
+			
+		</g:VerticalPanel>
+		    
+	</g:HTMLPanel>
+</ui:UiBinder> 
